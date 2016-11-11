@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+	<title>我的前端开发简历</title>
+	<style type="text/css">
+		p,body,ul,li{margin: 0;padding: 0;}
+		.h5_page{
+			background-color: #99cccc;
+		}
+		.h5_component_name_intro{
+			opacity:0;
+			text-align: center;
+			line-height: 20px;
+			color:rgb(43,57,57);
+			top: 380px;
+			font-size:14px;
+		}
+		.h5_component_name_tag1,
+		.h5_component_name_tag3,
+		.h5_component_name_tag5{
+			opacity: 0.75;
+			background-color: rgb(9, 98, 84);
+			color: rgb(174, 226, 217); 
+			border-radius: 3px;
+			text-align: center;
+			line-height: 22px;
+		} 
+		.h5_component_name_tag2,
+		.h5_component_name_tag4,
+		.h5_component_name_tag6{
+			opacity: 1;
+			background-color: rgb(9, 98, 84);
+			color: rgb(174, 226, 217); 
+			border-radius: 3px;
+			text-align: center;
+			line-height: 22px;
+		}
+		.h5_component_name_h1{
+	    	text-align: center;
+	    	height:70;
+	    	width:100%;
+	    	color:#fff;
+	    	font-size: 60px;
+	    	top:140px;
+	    	text-shadow:1px 2px rgb(34, 195, 170), 2px 4px rgb(174, 226, 217);	    	
+		}
+		.h5_component_name_others2{
+            -webkit-animation:rock 2s infinite 2s;
+        }
+        @-webkit-keyframes rock{
+            0%{ transform:rotate(0deg)}
+            5%{ transform:rotate(3deg)}
+            10%{ transform:rotate(-4deg)}
+            15%{ transform:rotate(3deg)}
+            20%{ transform:rotate(-2deg)}
+            25%{ transform:rotate(1deg)}
+            30%{ transform:rotate(-1deg)}
+            70%{ transform:rotate(0deg)}
+            100%{ transform:rotate(0deg)}
+        }        
+        .h5_component_name_resume,.h5_component_name_app{
+        	-webkit-animation:shine 2s infinite ;
+        }
+        @-webkit-keyframes shine {
+            from { background-color: #749a02; -webkit-box-shadow: 0 0 25px #333; }
+            50% { background-color: #91bd09; -webkit-box-shadow: 0 0 50px #91bd09; }
+            to { background-color: #749a02; -webkit-box-shadow: 0 0 25px #333; }
+        }
+	</style>
+
+
+	<!--引入组件资源-->
+	<script type="text/javascript" src="js/lib/jquery.js"></script>
+	<script type="text/javascript" src="js/lib/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/lib/jquery.fullPage.js"></script>
+    <!--引入H5对象资源-->
+	<script type="text/javascript" src="js/H5.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/H5.css">
+    <!--基本图文组件-->
+    <script type="text/javascript" src="js/H5ComponentBase.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/H5ComponentBase.css">
+
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+
+    <script type="text/javascript" src="js/H5ComponentRun.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/H5ComponentRun.css">
+
+
+</head>
+<body>
+    <div id="header"></div>
+	<header>		
+		<div id="logo">
+			<div class="header_img"><img src="imgs/logo.png" alt=""></div>
+			<div class="header_p">
+				<p class="header_p1">巩天然</p>
+				<p class="header_p2">个人简历</p>
+			</div>
+		</div>
+		<div class="nav">
+			<ul>
+				<li><a href="">首页</a></li>
+				<li><a href="">笔记</a></li>
+				<li><a href="">随笔</a></li>
+				<li><a href="">关于</a></li>
+			</ul>
+		</div>
+	</header>
+
+	<script type="text/javascript">
+		$(function(){
+			var h5 = new H5();
+			h5
+			.addPage()
+			    .addComponent('photo',{
+			    	center:true,
+			    	width:140, 
+			    	height:140,
+			    	bg:'imgs/photo.gif',
+			    	css:{opacity:0,borderRadius:'50%',top:160},			    	
+			    	animateIn:{opacity:1,top:160},
+			    	animateOut:{opacity:0},
+			    })
+			    .addComponent('slogan',{
+			    	text:'希望成为一名前端开发工程师，用技术实现自我价值。',
+			    	center:true,
+			    	width:420,
+			    	height:20,			    	
+			    	css:{opacity:0,fontWeight:'bold',textAlign: 'center',color:'rgb(43,57,57)',top:330,
+			             borderBottom:'1px solid rgba(96,96,96,0.6)',paddingBottom:'20px'},
+			    	animateIn:{opacity:1,top:330},
+			    	animateOut:{opacity:0},
+			    	delay:800,
+			    })
+			    .addComponent('intro',{
+			    	text:'我叫巩天然',
+			    	center:true,
+			    	width:150,
+			    	height:20,
+			    	animateIn:{opacity:1,top:390},
+			    	animateOut:{opacity:0},
+			    	delay:1400,
+
+			    })
+			    .addComponent('intro',{
+			    	text:'23岁',
+			    	center:true,
+			    	width:150,
+			    	height:20,
+			    	animateIn:{opacity:1,top:420},
+			    	animateOut:{opacity:0},
+			    	delay:1400,
+			    })
+			    .addComponent('intro',{
+			    	text:'希望成为一名前端er',
+			    	center:true,
+			    	width:150,
+			    	height:20,
+			    	animateIn:{opacity:1,top:450},
+			    	animateOut:{opacity:0},
+			    	delay:1400,
+			    })
+			    .addComponent('intro',{
+			    	text:'fightqd123@126.com',
+			    	center:true,
+			    	width:150,
+			    	height:20,
+			    	animateIn:{opacity:1,top:480},
+			    	animateOut:{opacity:0},
+			    	delay:1400,
+			    })
+			    .addComponent('intro',{
+			    	text:'电话：13958275824',
+			    	center:true,
+			    	width:150,
+			    	height:20,			    	
+			    	animateIn:{opacity:1,top:510},
+			    	animateOut:{opacity:0},
+			    	delay:1400,
+			    })
+			.addPage()
+			    .addComponent('h1',{
+			    	text:'擅长技术'			    	
+			    })
+			    .addComponent('tag1',{
+			    	text:'熟练掌握HTML及CSS语法',
+			    	width:180,
+			    	height:22,
+			    	css:{top:270,left:480},
+			    })
+			    .addComponent('tag2',{
+			    	text:'DIV+CSS布局实现静态页面',
+			    	width:190,
+			    	height:22,			    	
+			    	css:{top:270,left:680}
+			    })
+			    .addComponent('tag3',{
+			    	text:'网页设计与PhotoShop',
+			    	width:160,
+			    	height:22,
+			    	center:true,
+			    	css:{top:310,}
+			    })
+			    .addComponent('tag4',{
+			    	text:'了解HTML5与CSS3',
+			    	width:140,
+			    	height:22,
+			    	center:true,
+			    	css:{top:350,}
+			    })
+			    .addComponent('tag5',{
+			    	text:'可使用JavaScript & jQuery组件开发web app',
+			    	width:330,
+			    	height:22,
+			    	center:true,
+			    	css:{top:390,},
+			    })
+			    .addComponent('tag6',{
+			    	text:'未完待续',
+			    	width:90,
+			    	height:22,
+			    	center:true,
+			    	css:{top:430,},
+			    })
+			.addPage()
+			    .addComponent('h1',{
+			    	text:'我的作品',			    	
+			    })			    
+			    .addComponent('app',{
+			    	bg:'imgs/app.png',
+			    	width:130,
+			    	height:130,			    	
+			    	css:{top:230,borderRadius:'30%',left:'38%',cursor:'pointer'},
+			    	onclick:function(){
+			    		window.open('要跳转的页面');
+			    	}
+			    }) 
+			    .addComponent('web',{
+			    	text:'web app',
+			    	width:140,
+			    	height:20,
+			    	css:{top:380,left:'38%',textAlign:'center',color:'#111a17',}
+			    })
+			    .addComponent('resume',{
+			    	bg:'imgs/resume.png',
+			    	width:130,
+			    	height:130,
+			    	css:{top:230,left:'50%',borderRadius:'30%',cursor:'pointer'},
+			    	onclick:function(){
+			    		$.fn.fullpage.moveTo( 1 )
+			    	}
+			    })
+			    .addComponent('res',{
+			    	text:'我的简历',
+			    	width:140,
+			    	height:20,
+			    	css:{top:380,left:'50%',textAlign:'center',color:'#111a17',},	
+			    })
+			    
+			.addPage()
+			    .addComponent('h1',{
+			    	text:'其他'
+			    })
+			    .addComponent('others',{
+			    	text:'毕业院校 ：江苏经贸',
+			    	width:260,
+			    	height:20,
+			    	center:true,
+			    	css:{top:240,textAlign:'center',color:'#111a17',opacity:0},
+			    	animateIn:{opacity:1,top:240},
+			    	animateOut:{opacity:0},
+
+			    })    
+			    .addComponent('others',{
+			    	text:'专业 ：会计',
+			    	width:180,
+			    	height:20,
+			    	center:true,
+			    	css:{top:280,textAlign:'center',color:'#111a17',opacity:0},
+			    	animateIn:{opacity:1,top:280},
+			    	animateOut:{opacity:0},
+			    	delay:200,
+			    })
+			    .addComponent('others',{
+			    	text:'目前已自学前端开发一年，学习是个愉悦的过程',
+			    	width:380,
+			    	height:20,
+			    	center:true,
+			    	css:{top:320,textAlign:'center',color:'#111a17',opacity:0},
+			    	animateIn:{opacity:1,top:320},
+			    	animateOut:{opacity:0},
+			    	delay:500,
+			    })
+			    .addComponent('others',{
+			    	text:'愈发热爱着前端这个行业',
+			    	width:260,
+			    	height:20,
+			    	center:true,
+			    	css:{top:360,textAlign:'center',color:'#111a17',opacity:0},
+			    	animateIn:{opacity:1,top:360},
+			    	animateOut:{opacity:0},
+			    	delay:800,
+			    })
+			    .addComponent('others',{
+			    	text:'正在成为一名优秀程序媛的道路上奋斗着~',
+			    	width:380,
+			    	height:20,
+			    	center:true,
+			    	css:{top:400,textAlign:'center',color:'#111a17',opacity:0},
+			    	animateIn:{opacity:1,top:400},
+			    	animateOut:{opacity:0},
+			    	delay:1100,
+			    })
+			    .addComponent('others2',{
+			    	text:'请给个机会可好^_^',
+			    	width:260,
+			    	height:20,
+			    	center:true,
+			    	css:{top:440,textAlign:'center',color:'#111a17',opacity:0},
+			    	animateIn:{opacity:1,top:440},
+			    	animateOut:{opacity:0},
+			    	delay:1400,
+			    })
+			    .addComponent('others',{
+			    	width:260,
+			    	height:20,
+			    	center:true,
+			    	css:{top:450,borderBottom:'1px solid rgba(96,96,96,0.6)',
+			    	     paddingBottom:'20px',opacity:0},
+			        animateIn:{opacity:1,top:450},
+			    	animateOut:{opacity:0},     
+			    })
+			    .addComponent('run',{
+			    	type:'run',
+			    	css:{top:260}
+
+			    })
+
+
+			.loader();    
+		})
+	</script>
+	
+</body>
+</html>
