@@ -6,18 +6,20 @@
 	<title>我的前端开发简历</title>
 	<style type="text/css">
 		p,body,ul,li{margin: 0;padding: 0;}
+		
 		.h5_page{
 			background-color: #99cccc;
+			max-width: 1366px;
 		}
 		.h5_component_name_intro{
 			opacity:0;
 			text-align: center;
-			line-height: 20px;
+			line-height: 1.25em;
 			color:rgb(43,57,57);
 			top: 380px;
-			font-size:14px;
+			font-size:1em;
 		}
-		.h5_component_name_tag1,
+		
 		.h5_component_name_tag3,
 		.h5_component_name_tag5{
 			opacity: 0.75;
@@ -25,9 +27,9 @@
 			color: rgb(174, 226, 217); 
 			border-radius: 3px;
 			text-align: center;
-			line-height: 22px;
+			line-height: 1.4em;
 		} 
-		.h5_component_name_tag2,
+		.h5_component_name_tag1,		
 		.h5_component_name_tag4,
 		.h5_component_name_tag6{
 			opacity: 1;
@@ -35,14 +37,14 @@
 			color: rgb(174, 226, 217); 
 			border-radius: 3px;
 			text-align: center;
-			line-height: 22px;
+			line-height: 1.4em;
 		}
 		.h5_component_name_h1{
 	    	text-align: center;
 	    	height:70;
 	    	width:100%;
 	    	color:#fff;
-	    	font-size: 60px;
+	    	font-size: 3.75em;
 	    	top:140px;
 	    	text-shadow:1px 2px rgb(34, 195, 170), 2px 4px rgb(174, 226, 217);	    	
 		}
@@ -60,14 +62,7 @@
             70%{ transform:rotate(0deg)}
             100%{ transform:rotate(0deg)}
         }        
-        .h5_component_name_resume,.h5_component_name_app{
-        	-webkit-animation:shine 2s infinite ;
-        }
-        @-webkit-keyframes shine {
-            from { background-color: #749a02; -webkit-box-shadow: 0 0 25px #333; }
-            50% { background-color: #91bd09; -webkit-box-shadow: 0 0 50px #91bd09; }
-            to { background-color: #749a02; -webkit-box-shadow: 0 0 25px #333; }
-        }
+        
 	</style>
 
 
@@ -87,6 +82,9 @@
     <script type="text/javascript" src="js/H5ComponentRun.js"></script>
     <link rel="stylesheet" type="text/css" href="css/H5ComponentRun.css">
 
+    <script type="text/javascript" src="js/H5ComponentMyworks.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/H5ComponentMyworks.css">
+
 
 </head>
 <body>
@@ -103,7 +101,7 @@
 			<ul>
 				<li><a href="">首页</a></li>
 				<li><a href="">笔记</a></li>
-				<li><a href="">随笔</a></li>
+				
 				<li><a href="">关于</a></li>
 			</ul>
 		</div>
@@ -129,7 +127,7 @@
 			    	width:420,
 			    	height:20,			    	
 			    	css:{opacity:0,fontWeight:'bold',textAlign: 'center',color:'rgb(43,57,57)',top:330,
-			             borderBottom:'1px solid rgba(96,96,96,0.6)',paddingBottom:'20px'},
+			             borderBottom:'1px solid rgba(96,96,96,0.6)',paddingBottom:'1.25em'},
 			    	animateIn:{opacity:1,top:330},
 			    	animateOut:{opacity:0},
 			    	delay:800,
@@ -185,80 +183,65 @@
 			    	text:'擅长技术'			    	
 			    })
 			    .addComponent('tag1',{
-			    	text:'熟练掌握HTML及CSS语法',
-			    	width:180,
-			    	height:22,
-			    	css:{top:270,left:480},
+			    	text:'熟练掌握HTML及CSS语法 & DIV+CSS布局实现静态页面',			    	
+			    	width:'25em',
+			    	height:'1.375em',
+			    	css:{opacity:0,top:300,lineHeight:'1.375em',left:'50%',marginLeft:'-12.5em'},
+			    	animateIn:{opacity:1,top:270,},
+			    	animateOut:{opacity:0},
+			    	delay:500
 			    })
-			    .addComponent('tag2',{
-			    	text:'DIV+CSS布局实现静态页面',
-			    	width:190,
-			    	height:22,			    	
-			    	css:{top:270,left:680}
-			    })
+			    
 			    .addComponent('tag3',{
 			    	text:'网页设计与PhotoShop',
-			    	width:160,
-			    	height:22,
-			    	center:true,
-			    	css:{top:310,}
+			    	width:'10em',
+			    	height:'1.375em',
+			    	css:{opacity:0,top:340,lineHeight:'1.375em',left:'50%',marginLeft:'-5em'},
+			    	animateIn:{opacity:1,top:310,},
+			    	animateOut:{opacity:0},
+			    	delay:800
 			    })
 			    .addComponent('tag4',{
 			    	text:'了解HTML5与CSS3',
-			    	width:140,
-			    	height:22,
-			    	center:true,
-			    	css:{top:350,}
+			    	width:'8.75em',
+			    	height:'1.375em',
+			    	css:{opacity:0,top:380,lineHeight:'1.375em',left:'50%',marginLeft:'-4.375em'},
+			    	animateIn:{opacity:1,top:350},
+			    	animateOut:{opacity:0},
+			    	delay:1100
 			    })
 			    .addComponent('tag5',{
 			    	text:'可使用JavaScript & jQuery组件开发web app',
-			    	width:330,
-			    	height:22,
-			    	center:true,
-			    	css:{top:390,},
+			    	width:'20.625em',
+			    	height:'1.375em',
+			    	css:{opacity:0,top:420,lineHeight:'1.375em',left:'50%',marginLeft:'-10.31em'},
+			    	animateIn:{opacity:1,top:390,},
+			    	animateOut:{opacity:0},
+			    	delay:1400
 			    })
 			    .addComponent('tag6',{
 			    	text:'未完待续',
-			    	width:90,
-			    	height:22,
-			    	center:true,
-			    	css:{top:430,},
+			    	width:'5.625em',
+			    	height:'1.375em',
+			    	css:{opacity:0,top:460,lineHeight:'1.375em',left:'50%',marginLeft:'-2.812em'},
+			    	animateIn:{opacity:1,top:430},
+			    	animateOut:{opacity:0},
+			    	delay:1700
 			    })
 			.addPage()
 			    .addComponent('h1',{
 			    	text:'我的作品',			    	
 			    })			    
-			    .addComponent('app',{
-			    	bg:'imgs/app.png',
-			    	width:130,
-			    	height:130,			    	
-			    	css:{top:230,borderRadius:'30%',left:'38%',cursor:'pointer'},
-			    	onclick:function(){
-			    		window.open('要跳转的页面');
-			    	}
+			    .addComponent('myworks',{
+			    	type:'myworks',			    	
+			    	width:'20.625em',
+			    	height:180,
+			    	css:{top:280,opacity:0,left:'50%',marginLeft:'-10.3em'},
+			    	animateIn:{opacity:1,top:240,left:'50%',marginLeft:'-10.3em'},
+			    	animateOut:{opacity:0},
+
 			    }) 
-			    .addComponent('web',{
-			    	text:'web app',
-			    	width:140,
-			    	height:20,
-			    	css:{top:380,left:'38%',textAlign:'center',color:'#111a17',}
-			    })
-			    .addComponent('resume',{
-			    	bg:'imgs/resume.png',
-			    	width:130,
-			    	height:130,
-			    	css:{top:230,left:'50%',borderRadius:'30%',cursor:'pointer'},
-			    	onclick:function(){
-			    		$.fn.fullpage.moveTo( 1 )
-			    	}
-			    })
-			    .addComponent('res',{
-			    	text:'我的简历',
-			    	width:140,
-			    	height:20,
-			    	css:{top:380,left:'50%',textAlign:'center',color:'#111a17',},	
-			    })
-			    
+			    			    			    			    
 			.addPage()
 			    .addComponent('h1',{
 			    	text:'其他'
@@ -328,18 +311,19 @@
 			    	height:20,
 			    	center:true,
 			    	css:{top:450,borderBottom:'1px solid rgba(96,96,96,0.6)',
-			    	     paddingBottom:'20px',opacity:0},
+			    	     paddingBottom:'1.25em',opacity:0},
 			        animateIn:{opacity:1,top:450},
 			    	animateOut:{opacity:0},     
 			    })
 			    .addComponent('run',{
 			    	type:'run',
+			    	
 			    	css:{top:260}
 
 			    })
 
 
-			.loader();    
+			.loader(2);    
 		})
 	</script>
 	
