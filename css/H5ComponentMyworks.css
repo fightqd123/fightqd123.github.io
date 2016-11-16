@@ -1,0 +1,42 @@
+/*my works 我的作品组件--样式表*/
+.h5_component_name_myworks .work1{
+  position: absolute;
+  left: 0;
+}
+.h5_component_name_myworks .work2{
+  position: absolute;
+  right: 0;
+}
+.h5_component_name_myworks .work1 .bg1{
+  background: url(../imgs/app.png);
+  background-size: 100%;
+  width: 8.125em;
+  height: 8.125em;
+  border-radius: 25%;
+  cursor: pointer;
+}
+.h5_component_name_myworks .work1 .text1,
+.h5_component_name_myworks .work2 .text2{
+  line-height: 1.25em;
+  padding-top: 1.25em;
+  width: 8.125em;
+  text-align: center;
+}
+.h5_component_name_myworks .work2 .bg2{
+  background: url(../imgs/resume.png);
+  background-size: 100%;
+  width: 8.125em;
+  height: 8.125em;
+  border-radius: 25%;
+  cursor: pointer;
+}
+
+.h5_component_name_myworks .bg1,
+.h5_component_name_myworks .bg2{
+  -webkit-animation:shine 2s infinite ;
+}
+@-webkit-keyframes shine {
+    from { background-color: #749a02; -webkit-box-shadow: 0 0 25px #333; }
+    50% { background-color: #91bd09; -webkit-box-shadow: 0 0 50px #91bd09; }
+    to { background-color: #749a02; -webkit-box-shadow: 0 0 25px #333; }
+}*/
