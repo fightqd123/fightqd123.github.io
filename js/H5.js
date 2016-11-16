@@ -40,6 +40,9 @@ var H5 =function ( ) {
             case 'run' :
                 component = new H5ComponentRun(name,cfg);
             break;
+            case 'myworks' :
+                component = new H5ComponentMyworks(name,cfg);
+            break;
 
             default:
         }
