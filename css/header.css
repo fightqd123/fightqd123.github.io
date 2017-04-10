@@ -25,6 +25,6 @@ header{
 .header_p2{width: 60px;}
 
 .nav{font-size: 0.875em;font-color:#999;right: 2%;height: 60px;position: absolute;}
-.nav li {float: left;padding-right: 1em;line-height: 60px;}
-.nav a {text-decoration: none;color: #666;}
-.nav a:hover{color:#968;}
+.nav li {float: left;line-height: 60px;}
+.nav a {display: inline-block;text-decoration: none;text-align: center;color: #666;height: 60px;width: 3.5em}
+.nav a:hover{background-color: #99cccc;}
